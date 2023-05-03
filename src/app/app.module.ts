@@ -14,6 +14,19 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HttpClientModule } from '@angular/common/http';
+import { TablaComponent } from './Components/tabla/tabla.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule } from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { LoginComponent } from './Components/login/login.component';
+import { FormRepuestoComponent } from './Components/Forms/form-repuesto/form-repuesto.component';
+import { FormVehiculoComponent } from './Components/Forms/form-vehiculo/form-vehiculo.component';
+
 
 
 @NgModule({
@@ -22,6 +35,10 @@ import { HttpClientModule } from '@angular/common/http';
     RepuestoComponent,
     VehiculoComponent,
     MenuComponent,
+    TablaComponent,
+    LoginComponent,
+    FormRepuestoComponent,
+    FormVehiculoComponent,
 
   ],
   imports: [
@@ -34,7 +51,15 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

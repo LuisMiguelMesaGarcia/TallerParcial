@@ -1,0 +1,28 @@
+.shipping-card{
+    background-image: url("https://www.istockphoto.com/resources/images/IllustrationsLanding/BackgroundTile.jpg");
+    background-size: 100%;
+    align-items: center;
+    height: 100vh;
+    padding-top: 12%;
+}
+.letra{
+    padding-left: 15%;
+    padding-right: 15%;
+    color: #f5f5f5;
+}
+.mat-mdc-card-header{
+    padding-right: 20%;
+    padding-left: 25%;
+}
+.contenedor-form{
+    background-color: rgb(181, 196, 207);
+    border-radius: 10%;
+}
+.mdc-card__actions{
+    padding-right: 0%;
+    padding-left: 30%;
+}
+.mat-mdc-raised-button.mat-primary{
+    background-color: rgb(107, 164, 204);
+
+}

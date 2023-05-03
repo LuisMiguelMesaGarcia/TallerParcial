@@ -1,0 +1,28 @@
+<div class="container">
+  <form class="example-form" [formGroup]="repuestosForm" novalidate (ngSubmit)="onSubmit()">
+      <mat-form-field class="example-full-width">
+        <mat-label>Vehiculo</mat-label>
+        <input matInput placeholder="ej: moto" formControlName="vehiculo">
+        <mat-error *ngIf="repuestosForm.controls['vehiculo'].hasError('required')">
+          Este campo es <strong>obligatorio*</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Valor</mat-label>
+        <input matInput placeholder="ej: 1000" formControlName="valor">
+        <mat-error *ngIf="repuestosForm.controls['valor'].hasError('required')">
+          Este campo es <strong>obligatorio*</strong>
+        </mat-error>
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width">
+        <mat-label>Tipo</mat-label>
+        <input matInput placeholder="ej: Electrico" formControlName="tipo">
+        <mat-error *ngIf="repuestosForm.controls['tipo'].hasError('required')">
+          Este campo es <strong>obligatorio*</strong>
+        </mat-error>
+      </mat-form-field>
+      <button mat-raised-button >Crear</button>
+  </form>
+</div>

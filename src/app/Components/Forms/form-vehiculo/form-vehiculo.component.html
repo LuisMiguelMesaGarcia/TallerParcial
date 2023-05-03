@@ -1,0 +1,40 @@
+<div class="container">
+  <form class="example-form" [formGroup]="vehiculoForm" novalidate (ngSubmit)="onSubmit()">
+      <mat-form-field class="example-full-width">
+        <mat-label>Marca</mat-label>
+        <input matInput placeholder="ej: Ferrari" formControlName="marca">
+        <mat-error *ngIf="vehiculoForm.controls['marca'].hasError('required')">
+          Este campo es <strong>obligatorio*</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Color</mat-label>
+        <input matInput placeholder="ej: 1000" formControlName="color">
+        <mat-error *ngIf="vehiculoForm.controls['color'].hasError('required')">
+          Este campo es <strong>obligatorio*</strong>
+        </mat-error>
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width">
+        <mat-label>Modelo</mat-label>
+        <input matInput placeholder="ej: 2023" formControlName="modelo">
+        <mat-error *ngIf="vehiculoForm.controls['modelo'].hasError('required')">
+          Este campo es <strong>obligatorio*</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Placa</mat-label>
+        <input matInput placeholder="ej: SQL123" formControlName="placa">
+        <mat-error *ngIf="vehiculoForm.controls['placa'].hasError('required')">
+          Este campo es <strong>obligatorio*</strong>
+        </mat-error>
+        <mat-error *ngIf="vehiculoForm.controls['placa'].hasError('minlength')">
+          debe tener <strong>6</strong> digitos
+        </mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button >Crear</button>
+  </form>
+</div>
