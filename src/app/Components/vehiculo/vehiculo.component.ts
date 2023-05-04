@@ -1,6 +1,4 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ApiService } from 'src/app/Services/api.service';
 @Component({
@@ -27,7 +25,6 @@ export class VehiculoComponent implements OnInit{
     this.loadTable([res[0]])
     this.dataSource.data=res;
     })
-    
   }
 
   public loadTable(data:any[]){
@@ -36,5 +33,4 @@ export class VehiculoComponent implements OnInit{
       this.displayedColumns.push(colummns);
     }
   }
-
 }
